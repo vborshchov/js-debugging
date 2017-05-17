@@ -1,0 +1,62 @@
+    @import url('https://fonts.googleapis.com/css?family=Barrio');
+
+    :root
+    {
+      font-family: 'Barrio', cursive;
+      text-align: center;
+    }
+
+    button
+    {
+      all: unset;
+    }
+
+    h1
+    {
+      display: inline-block;
+      font-size: 36px;
+    }
+
+    .item-number
+    {
+      font-size: 20px;
+      color: rgb(255,69,0);
+    }
+
+    ul
+    {
+      width: 200px;
+      margin: 0 auto 20px;
+      list-style: none;
+    }
+
+    li
+    {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    input[type=checkbox]
+    {
+      margin-right: 10px;
+    }
+
+    input[type=checkbox]:checked + span
+    {
+      text-decoration: line-through;
+      color: rgb(255,69,0);
+    }
+
+    .delete-item
+    {
+      display: block;
+      width: 80px;
+      height: 40px;
+      margin: 20px auto;
+      background: rgb(255,99,71);
+    }
+
+    .message
+    {
+      color: rgb(255,69,0);
+    }
