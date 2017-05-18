@@ -38,22 +38,18 @@
     $item.placeholder = `Add # ${number}`
     $itemNumber.innerHTML = number - 1
 
-    console.log(number)
   }
 
   let deleter = () => {
     let $executed = $$("input:checked")
-    // console.log(number)
     $executed.forEach((l) => {
       let toDel = l.closest("li")
       $listItems.removeChild(toDel)
       number -= 1
     })
-    // console.log(number)
 
     $item.placeholder = `Add # ${number}`
     if (number < 0) $itemNumber.innerHTML = number - 1
-    // console.log(number)
   }
 
   $item.addEventListener("keydown", (event) => {
